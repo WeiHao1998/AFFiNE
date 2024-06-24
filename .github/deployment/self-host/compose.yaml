@@ -1,6 +1,7 @@
 services:
   affine:
-    image: ghcr.io/toeverything/affine-graphql:stable
+    # image: ghcr.io/toeverything/affine-graphql:stable
+    image: docker.io/local/affine-selfhost
     container_name: affine_selfhosted
     command:
       ['sh', '-c', 'node ./scripts/self-host-predeploy && node ./dist/index.js']
@@ -14,9 +15,9 @@ services:
         condition: service_healthy
     volumes:
       # custom configurations
-      - ~/.affine/self-host/config:/root/.affine/config
+      - ./affine/self-host/config:/root/.affine/config
       # blob storage
-      - ~/.affine/self-host/storage:/root/.affine/storage
+      - ./affine/self-host/storage:/root/.affine/storage
     logging:
       driver: 'json-file'
       options:
@@ -28,8 +29,8 @@ services:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgres://affine:affine@postgres:5432/affine
       - NODE_ENV=production
-      - AFFINE_ADMIN_EMAIL=${AFFINE_ADMIN_EMAIL}
-      - AFFINE_ADMIN_PASSWORD=${AFFINE_ADMIN_PASSWORD}
+      - AFFINE_ADMIN_EMAIL=admin@xaana.com
+      - AFFINE_ADMIN_PASSWORD=Xaana@2024
       # Telemetry allows us to collect data on how you use the affine. This data will helps us improve the app and provide better features.
       # Uncomment next line if you wish to quit telemetry.
       # - TELEMETRY_ENABLE=false
@@ -38,7 +39,7 @@ services:
     container_name: affine_redis
     restart: unless-stopped
     volumes:
-      - ~/.affine/self-host/redis:/data
+      - ./affine/self-host/redis:/data
     healthcheck:
       test: ['CMD', 'redis-cli', '--raw', 'incr', 'ping']
       interval: 10s
@@ -49,7 +50,7 @@ services:
     container_name: affine_postgres
     restart: unless-stopped
     volumes:
-      - ~/.affine/self-host/postgres:/var/lib/postgresql/data
+      - ./affine/self-host/postgres:/var/lib/postgresql/data
     healthcheck:
       test: ['CMD-SHELL', 'pg_isready -U affine']
       interval: 10s
