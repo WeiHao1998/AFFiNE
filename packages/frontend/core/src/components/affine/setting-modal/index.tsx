@@ -2,13 +2,13 @@ import { Loading, Scrollable } from '@affine/component';
 import { WorkspaceDetailSkeleton } from '@affine/component/setting-components';
 import type { ModalProps } from '@affine/component/ui/modal';
 import { Modal } from '@affine/component/ui/modal';
-import {
-  openIssueFeedbackModalAtom,
-  openStarAFFiNEModalAtom,
-} from '@affine/core/atoms';
+// import {
+//   openIssueFeedbackModalAtom,
+//   openStarAFFiNEModalAtom,
+// } from '@affine/core/atoms';
 import { AuthService } from '@affine/core/modules/cloud';
-import { Trans } from '@affine/i18n';
-import { ContactWithUsIcon } from '@blocksuite/icons/rc';
+// import { Trans } from '@affine/i18n';
+// import { ContactWithUsIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,
   useService,
@@ -121,16 +121,16 @@ const SettingModalInner = ({
     },
     [onSettingClick]
   );
-  const setOpenIssueFeedbackModal = useSetAtom(openIssueFeedbackModalAtom);
-  const setOpenStarAFFiNEModal = useSetAtom(openStarAFFiNEModalAtom);
+  // const setOpenIssueFeedbackModal = useSetAtom(openIssueFeedbackModalAtom);
+  // const setOpenStarAFFiNEModal = useSetAtom(openStarAFFiNEModalAtom);
 
-  const handleOpenIssueFeedbackModal = useCallback(() => {
-    setOpenIssueFeedbackModal(true);
-  }, [setOpenIssueFeedbackModal]);
+  // const handleOpenIssueFeedbackModal = useCallback(() => {
+  //   setOpenIssueFeedbackModal(true);
+  // }, [setOpenIssueFeedbackModal]);
 
-  const handleOpenStarAFFiNEModal = useCallback(() => {
-    setOpenStarAFFiNEModal(true);
-  }, [setOpenStarAFFiNEModal]);
+  // const handleOpenStarAFFiNEModal = useCallback(() => {
+  //   setOpenStarAFFiNEModal(true);
+  // }, [setOpenStarAFFiNEModal]);
 
   return (
     <>
@@ -163,7 +163,7 @@ const SettingModalInner = ({
                 ) : null}
               </Suspense>
             </div>
-            <div className={style.footer}>
+            {/* <div className={style.footer}>
               <ContactWithUsIcon fontSize={16} />
               <Trans
                 i18nKey={'com.affine.settings.suggestion-2'}
@@ -182,7 +182,7 @@ const SettingModalInner = ({
                   ),
                 }}
               />
-            </div>
+            </div> */}
           </div>
           <Scrollable.Scrollbar />
         </Scrollable.Viewport>

@@ -6,15 +6,13 @@ import {
 } from '@affine/component/setting-components';
 import { useAppUpdater } from '@affine/core/hooks/use-app-updater';
 import { useI18n } from '@affine/i18n';
-import { ArrowRightSmallIcon, OpenInNewIcon } from '@blocksuite/icons/rc';
+import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useCallback } from 'react';
 
 import { useAppSettingHelper } from '../../../../../hooks/affine/use-app-setting-helper';
 import { appIconMap, appNames } from '../../../../../pages/open-app';
-import { mixpanel, popupWindow } from '../../../../../utils';
-import { relatedLinks } from './config';
+import { popupWindow } from '../../../../../utils';
 import * as styles from './style.css';
-import { UpdateCheckSection } from './update-check-section';
 
 export const AboutAffine = () => {
   const t = useI18n();
@@ -40,17 +38,17 @@ export const AboutAffine = () => {
     [toggleAutoDownload, updateSettings]
   );
 
-  const onSwitchTelemetry = useCallback(
-    (checked: boolean) => {
-      if (!checked) {
-        mixpanel.opt_out_tracking();
-      } else {
-        mixpanel.opt_in_tracking();
-      }
-      updateSettings('enableTelemetry', checked);
-    },
-    [updateSettings]
-  );
+  // const onSwitchTelemetry = useCallback(
+  //   (checked: boolean) => {
+  //     if (!checked) {
+  //       mixpanel.opt_out_tracking();
+  //     } else {
+  //       mixpanel.opt_in_tracking();
+  //     }
+  //     updateSettings('enableTelemetry', checked);
+  //   },
+  //   [updateSettings]
+  // );
 
   return (
     <>
@@ -73,7 +71,7 @@ export const AboutAffine = () => {
         />
         {environment.isDesktop ? (
           <>
-            <UpdateCheckSection />
+            {/* <UpdateCheckSection /> */}
             <SettingRow
               name={t['com.affine.aboutAFFiNE.autoCheckUpdate.title']()}
               desc={t['com.affine.aboutAFFiNE.autoCheckUpdate.description']()}
@@ -106,7 +104,7 @@ export const AboutAffine = () => {
             </SettingRow>
           </>
         ) : null}
-        <SettingRow
+        {/* <SettingRow
           name={t['com.affine.telemetry.enable']()}
           desc={t['com.affine.telemetry.enable.desc']()}
         >
@@ -114,9 +112,9 @@ export const AboutAffine = () => {
             checked={appSettings.enableTelemetry !== false}
             onChange={onSwitchTelemetry}
           />
-        </SettingRow>
+        </SettingRow> */}
       </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutAFFiNE.contact.title']()}>
+      {/* <SettingWrapper title={t['com.affine.aboutAFFiNE.contact.title']()}>
         <a
           className={styles.link}
           rel="noreferrer"
@@ -135,8 +133,8 @@ export const AboutAffine = () => {
           {t['com.affine.aboutAFFiNE.contact.community']()}
           <OpenInNewIcon className="icon" />
         </a>
-      </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutAFFiNE.community.title']()}>
+      </SettingWrapper> */}
+      {/* <SettingWrapper title={t['com.affine.aboutAFFiNE.community.title']()}>
         <div className={styles.communityWrapper}>
           {relatedLinks.map(({ icon, title, link }) => {
             return (
@@ -153,8 +151,8 @@ export const AboutAffine = () => {
             );
           })}
         </div>
-      </SettingWrapper>
-      <SettingWrapper title={t['com.affine.aboutAFFiNE.legal.title']()}>
+      </SettingWrapper> */}
+      {/* <SettingWrapper title={t['com.affine.aboutAFFiNE.legal.title']()}>
         <a
           className={styles.link}
           rel="noreferrer"
@@ -173,7 +171,7 @@ export const AboutAffine = () => {
           {t['com.affine.aboutAFFiNE.legal.tos']()}
           <OpenInNewIcon className="icon" />
         </a>
-      </SettingWrapper>
+      </SettingWrapper> */}
     </>
   );
 };

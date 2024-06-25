@@ -111,9 +111,9 @@ export const AfterSignUpSendEmail: FC<AuthPanelProps> = ({
         )}
       </div>
 
-      <div className={style.authMessage} style={{ marginTop: 20 }}>
+      {/* <div className={style.authMessage} style={{ marginTop: 20 }}>
         {t['com.affine.auth.sign.auth.code.message']()}
-      </div>
+      </div> */}
 
       <BackButton
         onClick={useCallback(() => {

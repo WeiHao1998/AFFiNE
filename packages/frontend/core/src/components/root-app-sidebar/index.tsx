@@ -20,7 +20,7 @@ import { useNavigateHelper } from '../../hooks/use-navigate-helper';
 import { WorkbenchService } from '../../modules/workbench';
 import {
   AddPageButton,
-  AppDownloadButton,
+  // AppDownloadButton,
   AppSidebar,
   appSidebarOpenAtom,
   CategoryDivider,
@@ -228,7 +228,7 @@ export const RootAppSidebar = memo(
           </div>
         </SidebarScrollableContainer>
         <SidebarContainer>
-          {environment.isDesktop ? <UpdaterButton /> : <AppDownloadButton />}
+          {environment.isDesktop ? <UpdaterButton /> : null}
           <div style={{ height: '4px' }} />
           <AddPageButton onClick={onClickNewPage} />
         </SidebarContainer>

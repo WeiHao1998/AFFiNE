@@ -69,9 +69,9 @@ export const AfterSignInSendEmail = ({
     setIsSending(false);
   }, [authService, challenge, email, verifyToken]);
 
-  const onSignInWithPasswordClick = useCallback(() => {
-    setAuthState('signInWithPassword');
-  }, [setAuthState]);
+  // const onSignInWithPasswordClick = useCallback(() => {
+  //   setAuthState('signInWithPassword');
+  // }, [setAuthState]);
 
   const onBackBottomClick = useCallback(() => {
     setAuthState('signIn');
@@ -119,7 +119,7 @@ export const AfterSignInSendEmail = ({
         )}
       </div>
 
-      <div className={style.authMessage} style={{ marginTop: 20 }}>
+      {/* <div className={style.authMessage} style={{ marginTop: 20 }}>
         {t['com.affine.auth.sign.auth.code.message']()}
         &nbsp;
         <Trans
@@ -134,7 +134,7 @@ export const AfterSignInSendEmail = ({
             ),
           }}
         />
-      </div>
+      </div> */}
 
       <BackButton onClick={onBackBottomClick} />
     </>

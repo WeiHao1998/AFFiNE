@@ -41,7 +41,7 @@ export const ImportPage = ({
     />
     <div className={importPageBodyStyle}>
       <div className="title">Import</div>
-      <span>
+      {/* <span>
         AFFiNE will gradually support more and more file types for import.&nbsp;
         <a
           href="https://community.affine.pro/c/feature-requests/import-export"
@@ -50,7 +50,7 @@ export const ImportPage = ({
         >
           Provide feedback.
         </a>
-      </span>
+      </span> */}
     </div>
     <div className={importPageButtonContainerStyle}>
       <BlockCard

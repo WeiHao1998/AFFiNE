@@ -2,7 +2,7 @@ import { notify } from '@affine/component';
 import { AuthInput, ModalHeader } from '@affine/component/auth-components';
 import { Button } from '@affine/component/ui/button';
 import { useAsyncCallback } from '@affine/core/hooks/affine-async-hooks';
-import { Trans, useI18n } from '@affine/i18n';
+import { useI18n } from '@affine/i18n';
 import { ArrowDownBigIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import type { FC } from 'react';
@@ -169,10 +169,10 @@ export const SignIn: FC<AuthPanelProps> = ({
 
         <div className={style.authMessage}>
           {/*prettier-ignore*/}
-          <Trans i18nKey="com.affine.auth.sign.message">
+          {/* <Trans i18nKey="com.affine.auth.sign.message">
               By clicking &quot;Continue with Google/Email&quot; above, you acknowledge that
               you agree to AFFiNE&apos;s <a href="https://affine.pro/terms" target="_blank" rel="noreferrer">Terms of Conditions</a> and <a href="https://affine.pro/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.
-          </Trans>
+          </Trans> */}
         </div>
       </div>
     </>
