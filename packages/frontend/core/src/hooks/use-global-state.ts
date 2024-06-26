@@ -16,5 +16,5 @@ export function useDocumentTitle(newTitle?: string | null) {
 }
 
 export function usePageDocumentTitle(pageTitle?: string) {
-  useDocumentTitle(pageTitle ? `${pageTitle} · AFFiNE` : null);
+  useDocumentTitle(pageTitle ? `${pageTitle} · Compose` : null);
 }
