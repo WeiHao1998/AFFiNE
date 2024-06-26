@@ -30,8 +30,8 @@ export function setupCodeToolbarEntry(codeToolbar: AffineCodeToolbarWidget) {
     [
       {
         type: 'custom',
-        name: 'Ask AI',
-        tooltip: 'Ask AI',
+        name: 'Ask Zebra',
+        tooltip: 'Ask Zebra',
         icon: AIStarIcon,
         showWhen: () => true,
         render(codeBlock: CodeBlockComponent, onClick?: () => void) {

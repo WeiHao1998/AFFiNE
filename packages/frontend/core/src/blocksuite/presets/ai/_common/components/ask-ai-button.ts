@@ -197,7 +197,7 @@ export class AskAIButton extends WithDisposable(LitElement) {
         width=${buttonWidthMap[size]}
         height=${buttonHeightMap[size]}
       >
-        ${AIStarIcon} <span>Ask AI</span></icon-button
+        ${AIStarIcon} <span>Ask Zebra</span></icon-button
       >
     </div>`;
   }

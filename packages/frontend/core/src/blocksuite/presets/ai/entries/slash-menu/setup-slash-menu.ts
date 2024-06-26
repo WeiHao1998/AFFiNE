@@ -78,7 +78,7 @@ export function setupSlashMenuEntry(slashMenu: AffineSlashMenuWidget) {
 
   const menu = slashMenu.config.items.slice();
   menu.unshift({
-    name: 'Ask AI',
+    name: 'Ask Zebra',
     icon: AIStarIcon,
     showWhen: showWhenWrapper(),
     action: ({ rootElement }) => {

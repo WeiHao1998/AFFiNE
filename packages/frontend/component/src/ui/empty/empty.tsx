@@ -1,7 +1,5 @@
-import { assignInlineVars } from '@vanilla-extract/dynamic';
 import type { CSSProperties, ReactNode } from 'react';
 
-import { EmptySvg } from './empty-svg';
 import * as styles from './index.css';
 
 type ContainerStyleProps = {
@@ -17,20 +15,14 @@ export type EmptyContentProps = {
 };
 
 export const Empty = ({
-  containerStyle,
   title,
   description,
   descriptionStyle,
 }: EmptyContentProps) => {
-  const cssVar = assignInlineVars({
-    [styles.svgWidth]: containerStyle?.width,
-    [styles.svgHeight]: containerStyle?.height,
-    [styles.svgFontSize]: containerStyle?.fontSize,
-  });
   return (
     <div className={styles.emptyContainer}>
       <div style={{ color: 'var(--affine-black)' }}>
-        <EmptySvg className={styles.emptySvg} style={cssVar} />
+        <img src="/empty_icon.png" alt="" width={250} height={250} />
       </div>
       {title && (
         <p
