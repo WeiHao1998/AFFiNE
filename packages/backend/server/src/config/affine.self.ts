@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-// Custom configurations for AFFiNE Cloud
+// Custom configurations for Compose Cloud
 // ====================================================================================
 // Q: WHY THIS FILE EXISTS?
 // A: AFFiNE deployment environment may have a lot of custom environment variables,
 //    which are not suitable to be put in the `affine.ts` file.
-//    For example, AFFiNE Cloud Clusters are deployed on Google Cloud Platform.
+//    For example, Compose Cloud Clusters are deployed on Google Cloud Platform.
 //    We need to enable the `gcloud` plugin to make sure the nodes working well,
 //    but the default selfhost version may not require it.
 //    So it's not a good idea to put such logic in the common `affine.ts` file.

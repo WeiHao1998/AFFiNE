@@ -465,9 +465,9 @@ const InvoiceLine = ({
 
   const planText =
     invoice.plan === SubscriptionPlan.AI
-      ? 'AFFiNE AI'
+      ? 'Zebra AI'
       : invoice.plan === SubscriptionPlan.Pro
-        ? 'AFFiNE Cloud'
+        ? 'Compose Cloud'
         : null;
 
   return (

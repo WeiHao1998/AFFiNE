@@ -156,12 +156,12 @@ const useSyncEngineSyncProgress = () => {
     }
     if (syncing) {
       return (
-        `Syncing with AFFiNE Cloud` +
+        `Syncing with Compose Cloud` +
         (progress ? ` (${Math.floor(progress * 100)}%)` : '')
       );
     }
 
-    return 'Synced with AFFiNE Cloud';
+    return 'Synced with Compose Cloud';
   }, [
     currentWorkspace.flavour,
     errorMessage,

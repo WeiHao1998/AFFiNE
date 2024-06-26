@@ -50,7 +50,7 @@ async function load() {
   await loadRemote(AFFiNE_CONFIG_PATH, 'affine.js');
 
   // 5. load `config/affine.self` to patch custom configs
-  // This is the file only take effect in [AFFiNE Cloud]
+  // This is the file only take effect in [Compose Cloud]
   if (!AFFiNE.isSelfhosted) {
     await loadRemote(AFFiNE_CONFIG_PATH, 'affine.self.js');
   }

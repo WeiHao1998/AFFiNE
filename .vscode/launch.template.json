@@ -14,7 +14,7 @@
       "command": "yarn run dev:local"
     },
     {
-      "name": "Launch AFFiNE Cloud",
+      "name": "Launch Compose Cloud",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "yarn",

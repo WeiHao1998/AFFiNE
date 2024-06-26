@@ -264,7 +264,7 @@ export const SignOutConfirmModal = () => {
       });
     }
 
-    // if current workspace is affine cloud, switch to local workspace
+    // if current workspace is Compose Cloud, switch to local workspace
     if (currentWorkspace?.flavour === WorkspaceFlavour.AFFINE_CLOUD) {
       const localWorkspace = workspaces.find(
         w => w.flavour === WorkspaceFlavour.LOCAL

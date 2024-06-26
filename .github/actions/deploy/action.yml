@@ -1,5 +1,5 @@
 name: 'Deploy to Cluster'
-description: 'Deploy AFFiNE Cloud to cluster'
+description: 'Deploy Compose Cloud to cluster'
 inputs:
   build-type:
     description: 'Align with App build type, canary|beta|stable|internal'

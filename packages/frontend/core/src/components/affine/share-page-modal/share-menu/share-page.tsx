@@ -50,7 +50,7 @@ export const LocalSharePage = (props: ShareMenuProps) => {
             type="primary"
             data-testid="share-menu-enable-affine-cloud-button"
           >
-            {t['Enable AFFiNE Cloud']()}
+            {t['Enable Compose Cloud']()}
           </Button>
         </div>
       </div>

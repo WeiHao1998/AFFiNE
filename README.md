@@ -65,7 +65,7 @@ AFFiNE is an open-source, all-in-one workspace and an operating system for all t
 
 **Multimodal AI partner ready to kick in any work**
 
-- Write up professional work report? Turn an outline into expressive and presentable slides? Summary an article into a well-structured mindmap? Sorting your job plan and backlog for tasks? Or... draw and code prototype apps and web pages directly all with one prompt? With you, AFFiNE AI pushes your creativity to the edge of your imagination.
+- Write up professional work report? Turn an outline into expressive and presentable slides? Summary an article into a well-structured mindmap? Sorting your job plan and backlog for tasks? Or... draw and code prototype apps and web pages directly all with one prompt? With you, Zebra AI pushes your creativity to the edge of your imagination.
 
 **Local-first & Real-time collaborative**
 

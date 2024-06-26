@@ -48,7 +48,7 @@ export const LabelsPanel = () => {
         background: 'var(--affine-tag-orange)',
       },
       syncCloud: {
-        value: 'Sync with AFFiNE Cloud',
+        value: 'Sync with Compose Cloud',
         background: 'var(--affine-tag-blue)',
       },
       syncDocker: {

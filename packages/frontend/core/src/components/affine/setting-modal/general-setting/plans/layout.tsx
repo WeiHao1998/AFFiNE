@@ -189,7 +189,7 @@ export interface PlanCardProps {
   scrollRef?: React.RefObject<HTMLDivElement>;
 }
 export const CloudPlanLayout = ({
-  title = 'AFFiNE Cloud',
+  title = 'Compose Cloud',
   caption,
   select,
   toggle,
@@ -223,7 +223,7 @@ export interface AIPlanLayoutProps {
   caption?: ReactNode;
 }
 export const AIPlanLayout = ({
-  title = 'AFFiNE AI',
+  title = 'Zebra AI',
   caption,
   children,
 }: PropsWithChildren<AIPlanLayoutProps>) => {

@@ -82,8 +82,8 @@ export const useEnableCloud = () => {
 
       openConfirmModal(
         {
-          title: t['Enable AFFiNE Cloud'](),
-          description: t['Enable AFFiNE Cloud Description'](),
+          title: t['Enable Compose Cloud'](),
+          description: t['Enable Compose Cloud Description'](),
           cancelText: t['com.affine.enableAffineCloudModal.button.cancel'](),
           confirmButtonOptions: {
             type: 'primary',

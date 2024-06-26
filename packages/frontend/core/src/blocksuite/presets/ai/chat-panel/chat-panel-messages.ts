@@ -272,7 +272,7 @@ export class ChatPanelMessages extends WithDisposable(ShadowlessElement) {
                 )}
                 <div>
                   ${this.isLoading
-                    ? 'AFFiNE AI is loading history...'
+                    ? 'Zebra AI is loading history...'
                     : 'What can I help you with?'}
                 </div>
                 ${this._renderAIOnboarding()}
@@ -335,7 +335,7 @@ export class ChatPanelMessages extends WithDisposable(ShadowlessElement) {
       return PaymentRequiredErrorRenderer(this.host);
     } else if (error instanceof UnauthorizedError) {
       return GeneralErrorRenderer(
-        html`You need to login to AFFiNE Cloud to continue using AFFiNE AI.`,
+        html`You need to login to Compose Cloud to continue using Zebra AI.`,
         html`<div
           style=${styleMap({
             padding: '4px 12px',
@@ -437,7 +437,7 @@ export class ChatPanelMessages extends WithDisposable(ShadowlessElement) {
               : html`<div class="avatar"></div>`}
           </div>`
         : AffineAvatarIcon}
-      ${isUser ? 'You' : 'AFFINE AI'}
+      ${isUser ? 'You' : 'Zebra AI'}
     </div>`;
   }
 

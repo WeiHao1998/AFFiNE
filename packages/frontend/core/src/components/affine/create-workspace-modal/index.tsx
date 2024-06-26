@@ -142,7 +142,7 @@ const NameWorkspaceContent = ({
         />
       </div>
       <div className={styles.affineCloudWrapper}>
-        <div className={styles.subTitle}>{t['AFFiNE Cloud']()}</div>
+        <div className={styles.subTitle}>{t['Compose Cloud']()}</div>
         <div className={styles.card}>
           <div className={styles.cardText}>
             <div className={styles.cardTitle}>

@@ -27,7 +27,7 @@ export const TmpDisableAffineCloudModal = (props: ModalProps) => {
     >
       <StyleTips>
         <Trans i18nKey="com.affine.cloudTempDisable.description">
-          We are upgrading the AFFiNE Cloud service and it is temporarily
+          We are upgrading the Compose Cloud service and it is temporarily
           unavailable on the client side. If you wish to stay updated on the
           progress and be notified on availability, you can fill out the
           <a
@@ -38,7 +38,7 @@ export const TmpDisableAffineCloudModal = (props: ModalProps) => {
               color: 'var(--affine-link-color)',
             }}
           >
-            AFFiNE Cloud Signup
+            Compose Cloud Signup
           </a>
           .
         </Trans>
