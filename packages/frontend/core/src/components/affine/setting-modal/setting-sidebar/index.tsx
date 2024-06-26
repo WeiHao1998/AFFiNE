@@ -10,7 +10,6 @@ import { AuthService } from '@affine/core/modules/cloud';
 import { UserFeatureService } from '@affine/core/modules/cloud/services/user-feature';
 import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
 import { useI18n } from '@affine/i18n';
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import type { WorkspaceMetadata } from '@toeverything/infra';
 import {
   useLiveData,
@@ -84,7 +83,7 @@ export const SignInButton = () => {
       }, [setAuthModal])}
     >
       <div className="avatar not-sign">
-        <Logo1Icon />
+        <img src="/WechatIMG2187.png" width={22} alt="" />
       </div>
 
       <div className="content">

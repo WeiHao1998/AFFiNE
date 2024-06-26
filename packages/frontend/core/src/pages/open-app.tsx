@@ -60,7 +60,7 @@ interface LoaderData {
 const OpenAppImpl = ({ urlToOpen, channel }: OpenAppProps) => {
   const t = useI18n();
   const openDownloadLink = useCallback(() => {
-    const url = `https://affine.pro/download?channel=${channel}`;
+    const url = `https://compose.pro/download?channel=${channel}`;
     open(url, '_blank');
   }, [channel]);
   const appIcon = appIconMap[channel];
@@ -86,7 +86,7 @@ const OpenAppImpl = ({ urlToOpen, channel }: OpenAppProps) => {
 
         <div className={styles.topNavLinks}>
           <a
-            href="https://affine.pro"
+            href="https://compose.pro"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
@@ -94,7 +94,7 @@ const OpenAppImpl = ({ urlToOpen, channel }: OpenAppProps) => {
             Official Website
           </a>
           <a
-            href="https://community.affine.pro/home"
+            href="https://community.compose.pro/home"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
@@ -102,7 +102,7 @@ const OpenAppImpl = ({ urlToOpen, channel }: OpenAppProps) => {
             AFFiNE Community
           </a>
           <a
-            href="https://affine.pro/blog"
+            href="https://compose.pro/blog"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}
@@ -110,7 +110,7 @@ const OpenAppImpl = ({ urlToOpen, channel }: OpenAppProps) => {
             Blog
           </a>
           <a
-            href="https://affine.pro/about-us"
+            href="https://compose.pro/about-us"
             target="_blank"
             rel="noreferrer"
             className={styles.topNavLink}

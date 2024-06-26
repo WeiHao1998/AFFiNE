@@ -211,7 +211,7 @@ const BookDemo = ({ plan }: { plan: SubscriptionPlan }) => {
       case SubscriptionPlan.Enterprise:
         return 'https://6dxre9ihosp.typeform.com/to/rFfobTjf';
       default:
-        return 'https://affine.pro/pricing';
+        return 'https://compose.pro/pricing';
     }
   }, [plan]);
 

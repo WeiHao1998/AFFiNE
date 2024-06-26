@@ -110,7 +110,7 @@ export function ContactUS() {
       If you are still experiencing this issue, please{' '}
       <a
         style={{ color: 'var(--affine-primary-color)' }}
-        href="https://community.affine.pro"
+        href="https://community.compose.pro"
         target="__blank"
       >
         contact us through the community.

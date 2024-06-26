@@ -79,7 +79,7 @@ function getFootTemple(): string {
 
   const footerTemp = `
     <div style="font-size: 14px; width: 100%; display: flex; justify-content: flex-end; margin-right: 40px;">
-      <a href="https://affine.pro" style="display: flex; text-decoration: none; color: rgba(0, 0, 0, 0.1);">
+      <a href="https://compose.pro" style="display: flex; text-decoration: none; color: rgba(0, 0, 0, 0.1);">
         <span>Created with</span>
         <div style="display: flex; align-items: center;">${logo}</div>
       </a>

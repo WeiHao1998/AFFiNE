@@ -239,7 +239,7 @@ export const Component = () => {
                 </Scrollable.Root>
                 {loginStatus !== 'authenticated' ? (
                   <a
-                    href="https://affine.pro"
+                    href="https://compose.pro"
                     target="_blank"
                     className={styles.link}
                     rel="noreferrer"

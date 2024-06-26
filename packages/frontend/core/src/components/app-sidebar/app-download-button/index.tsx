@@ -24,7 +24,7 @@ export function AppDownloadButton({
     mixpanel.track('Button', {
       resolve: 'GoToDownloadAppPage',
     });
-    const url = `https://affine.pro/download?channel=stable`;
+    const url = `https://compose.pro/download?channel=stable`;
     open(url, '_blank');
   }, []);
 

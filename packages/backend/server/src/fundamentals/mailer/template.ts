@@ -67,7 +67,7 @@ export const emailTemplate = ({
           }">
             <table border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td style="border-radius: 8px" bgcolor="#1E96EB">
+                <td style="border-radius: 8px" bgcolor="#6100ff">
                   <a
                     href="${buttonUrl}"
                     target="_blank"

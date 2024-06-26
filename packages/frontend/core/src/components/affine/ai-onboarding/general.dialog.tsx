@@ -46,12 +46,12 @@ const getPlayList = (t: Translate): Array<PlayListItem> => [
     desc: (
       <Trans
         i18nKey="com.affine.ai-onboarding.general.5.description"
-        values={{ link: 'ai.affine.pro' }}
+        values={{ link: 'ai.compose.pro' }}
         components={{
           a: (
             <a
               className={styles.link}
-              href="https://ai.affine.pro"
+              href="https://ai.compose.pro"
               target="_blank"
               rel="noreferrer"
             />
@@ -228,7 +228,7 @@ export const AIOnboardingGeneral = () => {
               a: (
                 <a
                   className={styles.privacyLink}
-                  href="https://affine.pro/terms#ai"
+                  href="https://compose.pro/terms#ai"
                 />
               ),
             }}

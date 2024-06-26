@@ -14,7 +14,7 @@ export const SharePageNotFoundError = () => {
       }}
     >
       <a
-        href="https://affine.pro/"
+        href="https://compose.pro/"
         target="_blank"
         rel="noreferrer"
         style={{

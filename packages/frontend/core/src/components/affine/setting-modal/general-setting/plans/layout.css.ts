@@ -148,5 +148,5 @@ export const aiScrollTipTagInner = style({
   content: 'var(--content, "")',
   letterSpacing: 'inherit',
   background:
-    'linear-gradient(180deg, #56B9FF 0%, #23A4FF 37.88%, #1E96EB 75%)',
+    'linear-gradient(180deg, #56B9FF 0%, #23A4FF 37.88%, #6100ff 75%)',
 });

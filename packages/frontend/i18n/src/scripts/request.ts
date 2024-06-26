@@ -3,7 +3,7 @@ import type { fetch, Request, RequestInfo } from 'undici-types';
 
 // cSpell:ignore Tolgee
 const TOLGEE_API_KEY = process.env['TOLGEE_API_KEY'];
-const TOLGEE_API_URL = 'https://i18n.affine.pro';
+const TOLGEE_API_URL = 'https://i18n.compose.pro';
 
 if (!TOLGEE_API_KEY) {
   throw new Error(`Please set "TOLGEE_API_KEY" as environment variable!`);

@@ -2,7 +2,7 @@ function maybeAffineOrigin(origin: string) {
   return (
     origin.startsWith('file://') ||
     origin.startsWith('affine://') ||
-    origin.endsWith('affine.pro') || // stable/beta
+    origin.endsWith('compose.pro') || // stable/beta
     origin.endsWith('affine.fail') || // canary
     origin.includes('localhost') // dev
   );

@@ -7,19 +7,19 @@ export const useNavConfig = () => {
     () => [
       {
         title: t['com.affine.other-page.nav.official-website'](),
-        path: 'https://affine.pro',
+        path: 'https://compose.pro',
       },
       {
         title: t['com.affine.other-page.nav.affine-community'](),
-        path: 'https://community.affine.pro/home',
+        path: 'https://community.compose.pro/home',
       },
       {
         title: t['com.affine.other-page.nav.blog'](),
-        path: 'https://affine.pro/blog',
+        path: 'https://compose.pro/blog',
       },
       {
         title: t['com.affine.other-page.nav.contact-us'](),
-        path: 'https://affine.pro/about-us',
+        path: 'https://compose.pro/about-us',
       },
     ],
     [t]

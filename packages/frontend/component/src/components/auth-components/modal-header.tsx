@@ -1,4 +1,3 @@
-import { Logo1Icon } from '@blocksuite/icons/rc';
 import type { FC } from 'react';
 
 import { modalHeaderWrapper } from './share.css';
@@ -9,7 +8,12 @@ export const ModalHeader: FC<{
   return (
     <div className={modalHeaderWrapper}>
       <p>
-        <Logo1Icon className="logo" />
+        <img
+          src="/WechatIMG2187.png"
+          width={22}
+          style={{ marginRight: 5 }}
+          alt=""
+        />
         {title}
       </p>
       <p>{subTitle}</p>

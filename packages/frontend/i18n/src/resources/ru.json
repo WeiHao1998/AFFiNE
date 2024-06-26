@@ -974,7 +974,7 @@
   "com.affine.payment.cloud.free.name": "FOSS + Basic",
   "com.affine.payment.cloud.free.title": "Бесплатно навсегда",
   "com.affine.payment.cloud.pricing-plan.select.caption": "Мы предоставляем хостинг, никаких настроек не требуется.",
-  "com.affine.payment.cloud.pricing-plan.select.title": "Размещается на AFFiNE.Pro",
+  "com.affine.payment.cloud.pricing-plan.select.title": "Размещается на compose.pro",
   "com.affine.payment.cloud.pricing-plan.toggle-billed-yearly": "Оплачивается ежегодно",
   "com.affine.payment.cloud.pricing-plan.toggle-discount": "Экономия {{discount}}%",
   "com.affine.payment.cloud.pricing-plan.toggle-yearly": "ежегодно",

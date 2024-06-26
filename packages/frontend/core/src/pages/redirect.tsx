@@ -9,7 +9,7 @@ const trustedDomain = [
   'youtube.com',
   't.me',
   'reddit.com',
-  'affine.pro',
+  'compose.pro',
 ];
 
 const logger = new DebugLogger('redirect_proxy');

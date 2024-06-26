@@ -78,7 +78,7 @@ export const AIPlan = () => {
                 <>
                   <AISubscribe className={styles.learnAIButton} />
                   <a
-                    href="https://ai.affine.pro"
+                    href="https://ai.compose.pro"
                     target="_blank"
                     rel="noreferrer"
                   >
